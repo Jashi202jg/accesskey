@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/esave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_action_save"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:onClick="Esave"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/eacc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Name"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="10dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/eacc_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="textCapSentences"
+            android:background="@drawable/textinputborder"
+            android:layout_below="@+id/eacc_name" />
+        <TextView
+            android:id="@+id/eusr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/eacc_box"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:id="@+id/eusr_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/eusr_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="text"
+            android:background="@drawable/textinputborder" />
+        <TextView
+            android:id="@+id/epassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/eusr_box"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ePasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/epassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/epswd_box"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="textPassword"
+                android:background="@drawable/textinputborder" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="100dp">
+        <Button
+            android:id="@+id/ubtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy\nUsername"
+            android:textAllCaps="false"
+            android:layout_marginLeft="40dp"
+            android:background="#2ecc71"
+            android:textColor="#ffff"
+            android:onClick="cubtn"/>
+
+        <Button
+            android:id="@+id/pbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy\nPassword"
+            android:textAllCaps="false"
+            android:layout_marginLeft="80dp"
+            android:background="#2ecc71"
+            android:textColor="#ffff"
+            android:onClick="cpbtn" />
+    </LinearLayout>
+</RelativeLayout>

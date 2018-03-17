@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.itsme.jashim.accesskey.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efe1e5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textColor="#5ab32d"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By :"
+            android:textSize="19dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JASHIM GAFOOR K K"
+            android:textSize="18dp"
+            android:textColor="#48419e"
+            android:paddingLeft="25dp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jashi202itsme@gmail.com"
+            android:textSize="18dp"
+            android:textColor="#48419e"
+            android:paddingLeft="25dp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_action_rate"
+                android:onClick="rateApp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_action_share"
+                android:onClick="shareApp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AccessKey</string>
+    <string name="title_activity_main2">New Account</string>
+
+    <string-array name="account_array">
+        <item>Amazon</item>
+        <item>Codeacademy</item>
+        <item>Dropbox</item>
+        <item>Facebook</item>
+        <item>Flickr</item>
+        <item>Flipkart</item>
+        <item>Github</item>
+        <item>Google plus</item>
+        <item>Gmail</item>
+        <item>Hackerrank</item>
+        <item>Hangout</item>
+        <item>Instagram</item>
+        <item>Pinterest</item>
+        <item>Quora</item>
+        <item>Reddit</item>
+        <item>Tumblr</item>
+        <item>Twitter</item>
+        <item>Vine</item>
+        <item>Youtube</item>
+
+    </string-array>
+    <string name="title_activity_editacc">Edit Account</string>
+    <string name="title_activity_loginfirst">AccessKey</string>
+    <string name="title_activity_login_normal">AccessKey</string>
+    <string name="title_activity_resetpswd">Reset password</string>
+
+</resources>
